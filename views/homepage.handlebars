@@ -1,3 +1,17 @@
 {{#each blogposts as |blogpost|}}
 
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                {{ blogpost.name }}
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{ blogpost.date_created }}</h5>
+                <p class="card-text">{{ blogpost.description }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 {{/each}}
