@@ -1,8 +1,54 @@
 # tech-blog
 
+## Description
+
+The app allows us to publish posts and comment on other posts.
+
+## Technologies Used
+
+JavaScript, Node.js, POSTMAN, express.js, sequelize, MySQL, CSS, handlebars
+
+## Links
+
+### Heroku
+
+
+### Github Repo
+
+https://github.com/Bryan-Thaoxaochay/tech-blog
+
+## What I Learned
+
+### List
+1. MVC Directory 
+
+
+2. Handlebars
+
+
+3. Environmental Variables
+
+
+4. Modules
+
+
+5. Routing
+
+
+6. Helpers
+
+
+7. Models
+
+
+## Contact Information
+
+Email: bthaoxaochay@gmail.com
+GitHub: https://github.com/Bryan-Thaoxaochay 
+
 <!-- WHEN I visit the site for the first time
 THEN I am presented with the homepage, which includes existing blog posts if any have been posted; navigation links for the homepage and the dashboard; and the option to log in -->
-* Need to test
+* DONE
 
 <!-- WHEN I click on the homepage option
 THEN I am taken to the homepage -->
