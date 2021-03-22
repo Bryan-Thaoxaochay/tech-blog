@@ -3,7 +3,7 @@ const express = require('express'); // Allowing us to use express
 const session = require('express-session'); // Allowing us to use session
 const exphbs = require('express-handlebars'); // Allowing us to use handlebars
 const routes = require('./controllers'); // Connecting routes to server
-// const helpers = require('./utils/helpers'); // Connecting helpers
+const helpers = require('./utils/helpers'); // Connecting helpers
 
 const sequelize = require('./config/connection'); // Connecting sequelize info to allow server to connect
 const SequelizeStore = require('connect-session-sequelize')(session.Store); // Allowing us to use connect-session-sequelize
