@@ -4,14 +4,7 @@ const { Blogposts, User } = require('../models');
 
 router.get('/', async (req, res) => {
     try { // Getting all blogposts in the database
-        const blogpostData = await Blogposts.findAll({
-            include: [
-                {
-                    model: Blogposts, // Model
-                    attributes: ['name', 'description', 'date_created'] // Info needed from model
-                }
-            ]
-        })
+        const blogpostData = await Blogposts.findAll()
 
         const blogposts = blogpostData.map((blogpost) => blogpost.get({ plain: true }));
 
