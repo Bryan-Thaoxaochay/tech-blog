@@ -62,7 +62,7 @@ THEN I am prompted to either sign up or sign in -->
 
 <!-- WHEN I choose to sign up
 THEN I am prompted to create a username and password -->
-* Kinda done
+* DONE
 
 <!-- WHEN I click on the sign-up button
 THEN my user credentials are saved and I am logged into the site -->
