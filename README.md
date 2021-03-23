@@ -37,7 +37,8 @@ https://github.com/Bryan-Thaoxaochay/tech-blog
 - rendering
 
 
-6. Helpers
+6. Sign-Ups and Logins
+- fetch
 
 
 
@@ -61,9 +62,11 @@ THEN I am prompted to either sign up or sign in -->
 
 <!-- WHEN I choose to sign up
 THEN I am prompted to create a username and password -->
+* Kinda done
 
 <!-- WHEN I click on the sign-up button
 THEN my user credentials are saved and I am logged into the site -->
+* DONE
 
 <!-- WHEN I revisit the site at a later time and choose to sign in
 THEN I am prompted to enter my username and password -->
