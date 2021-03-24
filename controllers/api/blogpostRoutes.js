@@ -1,17 +1,38 @@
 const router = require('express').Router();
-const { Blogposts } = require('../../models');
+const { Blogposts, User } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 module.exports = router;
 
 router.get('/dashboard', async (req, res) => {
     try {
+        const userPosts = await Blogposts.findAll({
+            where: {
+                user_id: req.session.user_id
+            }
+        });
+
+        const blogposts = userPosts.map((blogpost) => blogpost.get({ plain: true }));
+
         res.render('dashboard', {
+            blogposts,
             logged_in: req.session.logged_in
         });
     }
     catch (err) {
         res.status(500).json(err);
     }
-})
+});
 
+router.post('/dashboard', async (req, res) => {
+    try {
+        const newPost = await Blogposts.create({
+            ...req.body,
+            user_id: req.session.user_id
+        });
+        res.status(200).json(newPost);
+    }
+    catch (err) {
+        res.status(500).json(err);
+    }
+});

@@ -10,15 +10,17 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-header">
-                {{ blogpost.name }}
+                {{ blogpost.date_created }}
             </div>
             <div class="card-body">
-                <h5 class="card-title">{{ blogpost.date_created }}</h5>
+                <h5 class="card-title">{{ blogpost.name }}</h5>
                 <p class="card-text">{{ blogpost.description }}</p>
             </div>
         </div>
     </div>
 </div>
+
+<br>
 {{/each}}
 
 <br>
@@ -28,7 +30,7 @@
     <div class="col-md-12">
         <div class="mb-3">
             <label>Title</label>
-            <input class="form-control">
+            <input id="post-title" class="form-control">
         </div>
     </div>
 </div>
@@ -36,7 +38,7 @@
 <div class="row">
     <div class="col-md-12">
         <div class="input-group">
-            <textarea class="form-control" aria-label="With textarea"></textarea>
+            <textarea id="post-description" class="form-control" aria-label="With textarea"></textarea>
         </div>
     </div>
 </div>
@@ -45,6 +47,8 @@
 
 <div class="row">
     <div class="col-md-12">
-        <button type="submit" class="btn btn-primary">Add Post</button>
+        <button id="post-add-btn" type="submit" class="btn btn-primary">Add Post</button>
     </div>
 </div>
+
+<script src="/js/blogpost.js"></script>

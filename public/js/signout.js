@@ -13,4 +13,4 @@ const signout = async () => {
   
 document.querySelector('#logout').addEventListener('click', signout);
 
-module.exports = signout;
+// module.exports = signout;

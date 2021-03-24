@@ -1,35 +1,43 @@
 {{#if logged_in}}
 
 {{#each blogposts as |blogpost|}}
+<br>
+
 <div class="row">
     <div class="col-md-12">
         <div class="card">
             <div class="card-header">
-                {{ blogpost.name }}
+                {{ blogpost.date_created }}
             </div>
             <div class="card-body">
-                <h5 class="card-title">{{ blogpost.date_created }}</h5>
+                <h5 class="card-title">{{ blogpost.name }}</h5>
             </div>
         </div>
     </div>
 </div>
+
+<br>
 {{/each}}
 
 {{else}}
 {{#each blogposts as |blogpost|}}
+<br>
+
 <div class="row">
     <div class="col-md-12">
         <div class="card">
             <div class="card-header">
-                {{ blogpost.name }}
+                {{ blogpost.date_created }}
             </div>
             <div class="card-body">
-                <h5 class="card-title">{{ blogpost.date_created }}</h5>
+                <h5 class="card-title">{{ blogpost.name }}</h5>
                 <p class="card-text">{{ blogpost.description }}</p>
             </div>
         </div>
     </div>
 </div>
+
+<br>
 {{/each}}
 
 {{/if}}
