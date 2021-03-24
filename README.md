@@ -25,6 +25,8 @@ https://github.com/Bryan-Thaoxaochay/tech-blog
 
 2. Handlebars
 - linking to other webpages
+- if/else
+- each
 
 3. Models
 
@@ -37,8 +39,9 @@ https://github.com/Bryan-Thaoxaochay/tech-blog
 - rendering
 
 
-6. Sign-Ups and Logins
+6. Sign-Ups, Sign-Ins, and Sign-Outs
 - fetch
+- javascript
 
 
 
