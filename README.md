@@ -90,7 +90,10 @@ THEN the comment is saved and the post is updated to display the comment, the co
 
 <!-- WHEN I click on the dashboard option in the navigation
 THEN I am taken to the dashboard and presented with any blog posts I have already created and the option to add a new blog post -->
-
+- Render dashboard handlebars
+- Need to get blogposts of user currently logged in
+- Template for adding blogpost
+- Code to send blogpost to database
 <!-- WHEN I click on the button to add a new blog post
 THEN I am prompted to enter both a title and contents for my blog post -->
 

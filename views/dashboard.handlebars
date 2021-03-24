@@ -1,0 +1,50 @@
+{{!-- Need to get blogposts of user currently logged in --}}
+<br>
+
+<header><b>Your Blog Posts</b></header>
+
+<br>
+
+{{#each blogposts as |blogpost|}}
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                {{ blogpost.name }}
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{ blogpost.date_created }}</h5>
+                <p class="card-text">{{ blogpost.description }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}
+
+<br>
+
+{{!-- Option to add a new blog post --}}
+<div class="row">
+    <div class="col-md-12">
+        <div class="mb-3">
+            <label>Title</label>
+            <input class="form-control">
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="input-group">
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="row">
+    <div class="col-md-12">
+        <button type="submit" class="btn btn-primary">Add Post</button>
+    </div>
+</div>
