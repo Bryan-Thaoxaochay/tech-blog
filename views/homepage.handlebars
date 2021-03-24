@@ -1,5 +1,23 @@
-{{#each blogposts as |blogpost|}}
+{{#if logged_in}}
 
+
+{{#each blogposts as |blogpost|}}
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                {{ blogpost.name }}
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{ blogpost.date_created }}</h5>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}
+
+{{else}}
+{{#each blogposts as |blogpost|}}
 <div class="row">
     <div class="col-md-12">
         <div class="card">
@@ -13,5 +31,6 @@
         </div>
     </div>
 </div>
-
 {{/each}}
+
+{{/if}}
