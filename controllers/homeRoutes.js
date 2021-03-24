@@ -10,7 +10,8 @@ router.get('/homepage', async (req, res) => {
 
         // Rendering onto the homepage
         res.render('homepage', {
-            blogposts
+            blogposts,
+            logged_in: req.session.logged_in
         });
     } 
     catch (err) { // Catching any errors

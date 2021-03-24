@@ -76,6 +76,7 @@ THEN I am prompted to enter my username and password -->
 
 <!-- WHEN I am signed in to the site
 THEN I see navigation links for the homepage, the dashboard, and the option to log out -->
+* DONE
 
 <!-- WHEN I click on the homepage option in the navigation
 THEN I am taken to the homepage and presented with existing blog posts that include the post title and the date created -->

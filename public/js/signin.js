@@ -15,12 +15,10 @@ const signinFormHandler = async (event) => {
   
       if (response.ok) {
         // If successful, redirect the browser to the home page
-        // document.location.replace('/homepage');
+        document.location.replace('/homepage');
       } else {
         alert(response.statusText);
       }
-
-      console.log('Signed In');
     }
 };
 
