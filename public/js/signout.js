@@ -5,7 +5,7 @@ const signout = async () => {
     });
   
     if (response.ok) {
-      document.location.replace('/homepage');
+      document.location.replace('/');
     } else {
       alert(response.statusText);
     }
