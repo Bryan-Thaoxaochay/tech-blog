@@ -55,6 +55,7 @@ router.put('/update-delete', async (req, res) => {
                 id: req.session.id
             }
         });
+        res.status(200).json(updatePost);
     }
     catch (err) {
         res.status(500).json(err);
