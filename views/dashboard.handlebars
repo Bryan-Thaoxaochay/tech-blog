@@ -10,11 +10,10 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-header">
-                {{ format_date blogpost.date_created }}
+                <b>{{ blogpost.name }}</b> {{ format_date blogpost.date_created }}
                 <button id="edit-btn" type="button" class="btn btn-warning">Edit</button>
             </div>
             <div class="card-body">
-                <h5 id="edit-name" class="card-title">{{ blogpost.name }}</h5>
                 <p id="edit-description" class="card-text">{{ blogpost.description }}</p>
             </div>
         </div>

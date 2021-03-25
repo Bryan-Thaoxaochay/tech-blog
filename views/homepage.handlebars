@@ -7,10 +7,9 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-header">
-                {{ format_date blogpost.date_created }}
+                <button id="title-btn" class="btn"><b>{{ blogpost.name }}</b></button>{{ format_date blogpost.date_created }}
             </div>
             <div class="card-body">
-                <h5 class="card-title">{{ blogpost.name }}</h5>
                 <p class="card-text">{{ blogpost.description }}</p>
             </div>
         </div>
@@ -28,10 +27,9 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-header">
-                {{ format_date blogpost.date_created }}
+                <b>{{ blogpost.name }}</b> {{ format_date blogpost.date_created }}
             </div>
             <div class="card-body">
-                <h5 class="card-title">{{ blogpost.name }}</h5>
                 <p class="card-text">{{ blogpost.description }}</p>
             </div>
         </div>
