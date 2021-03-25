@@ -36,3 +36,40 @@ router.post('/dashboard', async (req, res) => {
         res.status(500).json(err);
     }
 });
+
+router.get('/update-delete', async (req, res) => {
+    try {
+        res.render('change', {
+            logged_in: req.session.logged_in
+        });
+    }
+    catch (err) {
+        res.status(500).json(err);
+    }
+});
+
+router.put('/update-delete', async (req, res) => {
+    try {
+        const updatePost = await Blogposts.update(req.body, {
+            where: {
+                id: req.session.id
+            }
+        });
+    }
+    catch (err) {
+        res.status(500).json(err);
+    }
+});
+
+router.delete('/update-delete', async (req, res) => {
+    try {
+        const deletePost = await Blogposts.destroy({
+            where: {
+                id: req.session.id
+            }
+        })
+    }
+    catch (err) {
+        res.status(500).json(err);
+    }
+});

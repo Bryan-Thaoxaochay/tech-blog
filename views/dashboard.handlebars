@@ -11,10 +11,11 @@
         <div class="card">
             <div class="card-header">
                 {{ blogpost.date_created }}
+                <button id="edit-btn" type="button" class="btn btn-warning">Edit</button>
             </div>
             <div class="card-body">
-                <h5 class="card-title">{{ blogpost.name }}</h5>
-                <p class="card-text">{{ blogpost.description }}</p>
+                <h5 id="edit-name" class="card-title">{{ blogpost.name }}</h5>
+                <p id="edit-description" class="card-text">{{ blogpost.description }}</p>
             </div>
         </div>
     </div>
@@ -50,5 +51,7 @@
         <button id="post-add-btn" type="submit" class="btn btn-primary">Add Post</button>
     </div>
 </div>
+
+<br>
 
 <script src="/js/blogpost.js"></script>
