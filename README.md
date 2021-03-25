@@ -42,6 +42,7 @@ https://github.com/Bryan-Thaoxaochay/tech-blog
 6. Sign-Ups, Sign-Ins, and Sign-Outs
 - fetch
 - javascript
+- sign out timer
 
 
 
@@ -73,6 +74,7 @@ THEN my user credentials are saved and I am logged into the site -->
 
 <!-- WHEN I revisit the site at a later time and choose to sign in
 THEN I am prompted to enter my username and password -->
+* DONE
 
 <!-- WHEN I am signed in to the site
 THEN I see navigation links for the homepage, the dashboard, and the option to log out -->
@@ -102,6 +104,7 @@ THEN the title and contents of my post are saved and I am taken back to an updat
 
 <!-- WHEN I click on one of my existing posts in the dashboard
 THEN I am able to delete or update my post and taken back to an updated dashboard -->
+* Need to figure out how to upload clicked post onto update-delete page
 
 <!-- WHEN I click on the logout option in the navigation
 THEN I am signed out of the site -->

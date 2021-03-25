@@ -14,7 +14,7 @@ const signout = async () => {
 document.querySelector('#logout').addEventListener('click', signout);
 
 
-const timeout = 60000;
+const timeout = 600000;
 let timeoutId;
 
 const startTimer = () => {

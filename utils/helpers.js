@@ -1,7 +1,7 @@
 module.exports = {
 
-    homepage: () => {
-        
+    format_date: (date) => {
+        return date.toLocaleDateString();
     }
 
 }
