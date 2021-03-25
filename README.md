@@ -22,11 +22,16 @@ https://github.com/Bryan-Thaoxaochay/tech-blog
 ### List
 1. MVC Directory 
 
+Having the directory organized through MVC helps a lot. Although there are still a lot of files, I know where every file is.
 
 2. Handlebars
+
 - linking to other webpages
+I thought it would be difficult to link webpages in handlebars, but it may actually be easier than HTML.
 - if/else
+Having this built-in helper was helpful when deciding what needs to be displayed.
 - each
+Being able to do a for each in the handlebar really decreased the amount of code necessary in the JavaScript files.
 
 3. Models
 
@@ -36,16 +41,21 @@ https://github.com/Bryan-Thaoxaochay/tech-blog
 
 
 5. Routing
+
 - rendering
+I am getting more use to using routes along with the methods. With the routing and JavaScript, it really makes the website much more dynamic.
 
+6. JavaScript
 
-6. Sign-Ups, Sign-Ins, and Sign-Outs
+I am getting use to using front-end JavaScript with the back-end routing. It was necessary for many functions, such as logging in, logout timer, and displaying the info from MySQL.
 - fetch
-- javascript
-- sign out timer
+- login, logout
 
 
+7. Helpers
 
+- Date Formatting
+A helper function made it really simple converting the date from MySQL into the correct format.
 
 ## Contact Information
 
