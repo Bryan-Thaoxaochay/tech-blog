@@ -4,6 +4,8 @@ const updatePostHandler = async (event) => {
         const name = document.querySelector(".card-body").firstElementChild.textContent;
         const description = document.querySelector(".card-body").lastElementChild.textContent;
     
+        console.log(name, description);
+
         if (name && description) {
             const response = await fetch('/api/blogposts/update-delete', {
                 method: 'PUT',
@@ -12,7 +14,7 @@ const updatePostHandler = async (event) => {
             });
     
             if (response.ok) {
-                document.location.replace('/api/blogposts/dashboard');
+                // document.location.replace('/api/blogposts/dashboard');
             }
             else {
                 console.log('Response not okay');

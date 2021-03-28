@@ -1,3 +1,6 @@
+// const postId = document.querySelector('input[name="post-id"]').value;
+
+
 const newPostHandler = async (event) => {
     event.preventDefault();
 
@@ -52,3 +55,5 @@ const editPostHandler = async (event) => {
 }
 
 document.querySelector('#edit-btn').addEventListener('click', editPostHandler);
+
+// edit/${postId}
